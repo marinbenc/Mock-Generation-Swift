@@ -18,6 +18,6 @@ Create a class called `ProtocolNameMock` in which it will...
 * Overloaded methods will produce compiler erros since the variables above the functions have the same name. Workaround: delete the variables on top of one of the functions, or rename them.
 
 ## Usage:
-You will need [sourcery](https://github.com/krzysztofzablocki/Sourcery/) template for this to work. See the Sourcery readme for more info.
+You will need [Sourcery](https://github.com/krzysztofzablocki/Sourcery/) for this to work. See the Sourcery readme for more info.
 
 **Pull requests welcome!**
