@@ -17,4 +17,7 @@ Create a class called `ProtocolNameMock` in which it will...
 * Function parameters that are `@escaping` closures will produce a compiler error when declaring the `recievedArguments` tuple, because functions tuples are implicitly escaping, so there's no need for `@escaping`. Workaround: Remove the `@escaping` from the declaration.
 * Overloaded methods will produce compiler erros since the variables above the functions have the same name. Workaround: delete the variables on top of one of the functions, or rename them.
 
+## Usage:
+You will need [sourcery](https://github.com/krzysztofzablocki/Sourcery/) template for this to work. See the Sourcery readme for more info.
+
 **Pull requests welcome!**
