@@ -1,4 +1,4 @@
-// Generated using Sourcery 0.5.0 — https://github.com/krzysztofzablocki/Sourcery
+// Generated using Sourcery 0.5.2 — https://github.com/krzysztofzablocki/Sourcery
 // DO NOT EDIT
 
 
@@ -21,6 +21,20 @@ class MockableServiceMock: MockableService {
 
         functionWithArgumentsCalled = true
         functionWithArgumentsRecievedArguments = (firstArgument: firstArgument, onComplete: onComplete)
+        
+    }
+
+
+    //MARK: - functionWithCallback
+
+    var functionWithCallbackCalled = false
+    var functionWithCallbackRecievedArguments: (firstArgument: String, onComplete: (String)-> Void)?
+    
+
+    func functionWithCallback(_ firstArgument: String, onComplete: @escaping (String)-> Void) {
+
+        functionWithCallbackCalled = true
+        functionWithCallbackRecievedArguments = (firstArgument: firstArgument, onComplete: onComplete)
         
     }
 

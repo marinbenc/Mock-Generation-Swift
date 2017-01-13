@@ -14,7 +14,6 @@ Create a class called `ProtocolNameMock` in which it will...
  - Add a gettable and settable variable with the same name and type
 
 ## Issues and limitations:
-* Function parameters that are `@escaping` closures will produce a compiler error when declaring the `recievedArguments` tuple, because functions tuples are implicitly escaping, so there's no need for `@escaping`. Workaround: Remove the `@escaping` from the declaration.
 * Overloaded methods will produce compiler erros since the variables above the functions have the same name. Workaround: delete the variables on top of one of the functions, or rename them.
 
 ## Usage:

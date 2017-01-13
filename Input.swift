@@ -18,6 +18,7 @@ protocol MockableService: AutoMockable {
     
     var someVariable: Int { get }
     func functionWithArguments(argumentLabel firstArgument: String, onComplete: (String)-> Void)
+    func functionWithCallback(_ firstArgument: String, onComplete: @escaping (String)-> Void)
     func functionWithoutArguments()
     func functionWithReturnValue()-> String
     func functionWithArgumentsAndReturnValue()-> Float
